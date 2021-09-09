@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31612.314
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCSServices.Matrixx.Agent", "OCSServices.Matrixx.Agent\OCSServices.Matrixx.Agent.csproj", "{716DC80A-F9DD-4C07-B20B-FE7626F7D412}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Agent", "Agent", "{CAF073B3-7AF3-4697-9D2A-5626AD02791D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AgentFactory", "AgentFactory", "{E34D665E-340D-4C35-8C54-2BD390CE415C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{1FD1A02F-96E3-483A-BBD1-6861E549F688}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCSServices.Matrixx.Agent.Contracts", "OCSServices.Matrixx.Agent.Contracts\OCSServices.Matrixx.Agent.Contracts.csproj", "{3D24F79F-F2B8-4C02-8277-6D08F89845A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCSServices.Matrixx.Api.Client", "OCSServices.Matrixx.Api.Client\OCSServices.Matrixx.Api.Client.csproj", "{3B7F0AA4-F463-4886-BD93-5D420D8FB66E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCSServices.Matrixx.Api.Client.Contracts", "OCSServices.Matrixx.Api.Client.Contracts\OCSServices.Matrixx.Api.Client.Contracts.csproj", "{15F5E50F-78D9-4E34-9962-6ADFCD988C08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCSServices.Matrixx.AgentFactory", "OCSServices.Matrixx.AgentFactory\OCSServices.Matrixx.AgentFactory.csproj", "{E4EE2678-16D7-4F5C-A16C-03A83F88B1DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCSServices.Matrixx.Agent.UT", "OCSServices.Matrixx.Agent.UT\OCSServices.Matrixx.Agent.UT.csproj", "{71972FB9-87F3-469A-877E-5F18A7639F50}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{716DC80A-F9DD-4C07-B20B-FE7626F7D412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{716DC80A-F9DD-4C07-B20B-FE7626F7D412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{716DC80A-F9DD-4C07-B20B-FE7626F7D412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{716DC80A-F9DD-4C07-B20B-FE7626F7D412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D24F79F-F2B8-4C02-8277-6D08F89845A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D24F79F-F2B8-4C02-8277-6D08F89845A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D24F79F-F2B8-4C02-8277-6D08F89845A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D24F79F-F2B8-4C02-8277-6D08F89845A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B7F0AA4-F463-4886-BD93-5D420D8FB66E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B7F0AA4-F463-4886-BD93-5D420D8FB66E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B7F0AA4-F463-4886-BD93-5D420D8FB66E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B7F0AA4-F463-4886-BD93-5D420D8FB66E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15F5E50F-78D9-4E34-9962-6ADFCD988C08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15F5E50F-78D9-4E34-9962-6ADFCD988C08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15F5E50F-78D9-4E34-9962-6ADFCD988C08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15F5E50F-78D9-4E34-9962-6ADFCD988C08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4EE2678-16D7-4F5C-A16C-03A83F88B1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4EE2678-16D7-4F5C-A16C-03A83F88B1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4EE2678-16D7-4F5C-A16C-03A83F88B1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4EE2678-16D7-4F5C-A16C-03A83F88B1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71972FB9-87F3-469A-877E-5F18A7639F50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71972FB9-87F3-469A-877E-5F18A7639F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71972FB9-87F3-469A-877E-5F18A7639F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71972FB9-87F3-469A-877E-5F18A7639F50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{716DC80A-F9DD-4C07-B20B-FE7626F7D412} = {CAF073B3-7AF3-4697-9D2A-5626AD02791D}
+		{3D24F79F-F2B8-4C02-8277-6D08F89845A5} = {CAF073B3-7AF3-4697-9D2A-5626AD02791D}
+		{3B7F0AA4-F463-4886-BD93-5D420D8FB66E} = {CAF073B3-7AF3-4697-9D2A-5626AD02791D}
+		{15F5E50F-78D9-4E34-9962-6ADFCD988C08} = {CAF073B3-7AF3-4697-9D2A-5626AD02791D}
+		{E4EE2678-16D7-4F5C-A16C-03A83F88B1DA} = {E34D665E-340D-4C35-8C54-2BD390CE415C}
+		{71972FB9-87F3-469A-877E-5F18A7639F50} = {1FD1A02F-96E3-483A-BBD1-6861E549F688}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DCDCE597-7F46-4285-A5D9-89317FE41F60}
+	EndGlobalSection
+EndGlobal

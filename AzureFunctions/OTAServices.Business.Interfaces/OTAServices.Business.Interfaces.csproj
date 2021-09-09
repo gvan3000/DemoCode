@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OTAServices.Business.Entities.Common" Version="1.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OTAServices.Business.Entities.Common\OTAServices.Business.Entities.Common.csproj" />
+    <ProjectReference Include="..\OTAServices.Business.Entities\OTAServices.Business.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

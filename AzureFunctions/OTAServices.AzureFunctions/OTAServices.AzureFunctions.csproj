@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>NU1701;NU1702</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.KeyVault" Version="3.0.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="1.7.1" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.ServiceBus" Version="3.0.3" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="3.0.3" />
+    <PackageReference Include="Microsoft.Diagnostics.EventFlow.Inputs.MicrosoftLogging" Version="1.4.0" />
+    <PackageReference Include="Microsoft.Diagnostics.EventFlow.Outputs.ElasticSearch" Version="2.6.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="1.6.0" />
+    <PackageReference Include="Microsoft.Azure.WebJobs.ServiceBus" Version="3.0.0-beta8" />
+    <PackageReference Include="Microsoft.Diagnostics.EventFlow.Outputs.StdOutput" Version="1.4.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="2.1.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Clients.ActiveDirectory" Version="3.19.8" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.26" />
+    <PackageReference Include="OTAServices.Bus.Contracts" Version="1.0.8" />
+    <PackageReference Include="Teleena.Azure.KeyVault" Version="1.0.3" />
+    <PackageReference Include="Teleena.AzureFunctions.DependencyInjection" Version="1.0.4" />
+    <PackageReference Include="Teleena.AzureStorage.Client" Version="1.0.0" />
+    <PackageReference Include="Teleena.Sftp.Client" Version="1.0.5" />
+    <PackageReference Include="TeleenaFileLogging.AzureFunctions" Version="1.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="eventFlowConfig.NLPreproduction.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="eventFlowConfig.UYTProduction.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="eventFlowConfig.ServerNotFound.Debug.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="eventFlowConfig.ServerNotFound.Test.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="eventFlowConfig.Test.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="System.Private.ServiceModel.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <Target Name="CopySPSM" BeforeTargets="Build">
+    <Copy SourceFiles="System.Private.ServiceModel.dll" DestinationFolder="$(OutputPath)\bin" />
+  </Target>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OTAServices.Business.Functions\OTAServices.Business.Functions.csproj" />
+    <ProjectReference Include="..\OTAServices.DataCore.Repositories\OTAServices.DataCore.Repositories.csproj" />
+    <ProjectReference Include="..\OTAServices.ServiceReferences\OTAServices.ServiceReferences.csproj" />
+  </ItemGroup>
+</Project>

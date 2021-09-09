@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B7F0AA4-F463-4886-BD93-5D420D8FB66E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OCSServices.Matrixx.Api.Client</RootNamespace>
+    <AssemblyName>OCSServices.Matrixx.Api.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>teleena.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+    </Reference>
+    <Reference Include="Polly, Version=5.9.0.0, Culture=neutral, PublicKeyToken=c8a3ffc3f8f825cc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Polly-Signed.5.9.0\lib\net45\Polly.dll</HintPath>
+    </Reference>
+    <Reference Include="SplitProvisioning.Base, Version=0.1.10.0, Culture=neutral, PublicKeyToken=b26e814615ab2820, processorArchitecture=MSIL">
+      <HintPath>..\packages\SplitProvisioning.Base.0.1.10\lib\net452\SplitProvisioning.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiClient\Base\BaseApiOperation.cs" />
+    <Compile Include="ApiClient\Client.cs" />
+    <Compile Include="ApiClient\V3\ApiVersionAttribute.cs" />
+    <Compile Include="ApiClient\V3\Proxies\BalanceProxy.cs" />
+    <Compile Include="ApiClient\V3\Proxies\BaseProxy.cs" />
+    <Compile Include="ApiClient\V3\Proxies\DeviceProxy.cs" />
+    <Compile Include="ApiClient\V3\Proxies\GroupProxy.cs" />
+    <Compile Include="ApiClient\V3\Proxies\MultiProxy.cs" />
+    <Compile Include="ApiClient\V3\Proxies\OfferProxy.cs" />
+    <Compile Include="ApiClient\V3\Proxies\SubscriberProxy.cs" />
+    <Compile Include="ApiClient\V3\Proxies\WalletProxy.cs" />
+    <Compile Include="ApiClient\V3\UrlBuilder.cs" />
+    <Compile Include="Base\Enums\ApiVersion.cs" />
+    <Compile Include="Base\Enums\HttpMethod.cs" />
+    <Compile Include="Base\MatrixxApiConstants.cs" />
+    <Compile Include="Base\IApiOperation.cs" />
+    <Compile Include="Internal\Balance\GroupAddThreshold.cs" />
+    <Compile Include="Internal\Balance\GroupAdjustBalance.cs" />
+    <Compile Include="Internal\Balance\SubscriberAddThreshold.cs" />
+    <Compile Include="Internal\Balance\SubscriberAdjustBalance.cs" />
+    <Compile Include="Internal\Device\DeviceCreate.cs" />
+    <Compile Include="Internal\Device\DeviceModify.cs" />
+    <Compile Include="Internal\Device\DeviceQuery.cs" />
+    <Compile Include="Internal\Device\DeviceSessionQuery.cs" />
+    <Compile Include="Internal\Group\GroupAddMembership.cs" />
+    <Compile Include="Internal\Group\GroupAdminCreate.cs" />
+    <Compile Include="Internal\Group\GroupCancelOffer.cs" />
+    <Compile Include="Internal\Group\GroupCreate.cs" />
+    <Compile Include="Internal\Group\GroupModify.cs" />
+    <Compile Include="Internal\Group\GroupModifyOffer.cs" />
+    <Compile Include="Internal\Group\GroupPurchaseOffer.cs" />
+    <Compile Include="Internal\Group\GroupQuery.cs" />
+    <Compile Include="Internal\Group\GroupRemove.cs" />
+    <Compile Include="Internal\Multi\RequestMulti.cs" />
+    <Compile Include="Internal\ProductOffer\SubscriberCancelOffer.cs" />
+    <Compile Include="Internal\ProductOffer\SubscriberPurchaseOffer.cs" />
+    <Compile Include="Internal\Subscriber\SubscriberModifyOffer.cs" />
+    <Compile Include="Internal\Wallet\GroupWalletQuery.cs" />
+    <Compile Include="Internal\Wallet\WalletQuery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Internal\Subscriber\SubscriberAddDevice.cs" />
+    <Compile Include="Internal\Subscriber\SubscriberCreate.cs" />
+    <Compile Include="Internal\Subscriber\SubscriberDelete.cs" />
+    <Compile Include="Internal\Subscriber\SubscriberMembership.cs" />
+    <Compile Include="Internal\Subscriber\SubscriberModify.cs" />
+    <Compile Include="Internal\Subscriber\SubscriberQuery.cs" />
+    <Compile Include="Internal\Subscriber\SubscriberRemoveDevice.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Internal\Event\" />
+    <Folder Include="Internal\Meter\" />
+    <Folder Include="Internal\Policy\" />
+    <Folder Include="Internal\Pricing\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="teleena.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OCSServices.Matrixx.Api.Client.Contracts\OCSServices.Matrixx.Api.Client.Contracts.csproj">
+      <Project>{15f5e50f-78d9-4e34-9962-6adfcd988c08}</Project>
+      <Name>OCSServices.Matrixx.Api.Client.Contracts</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="teleena.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

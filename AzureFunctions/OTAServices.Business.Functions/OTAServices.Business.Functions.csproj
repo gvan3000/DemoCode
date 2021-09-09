@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>NU1701;NU1702</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Connected Services\" />
+    <Folder Include="WorkflowStarters\OTACampaignSubscribers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Diagnostics.EventFlow.Outputs.StdOutput" Version="1.4.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="OTAServices.Bus.Contracts" Version="1.0.8" />
+    <PackageReference Include="OTAServices.Shared.Contracts" Version="1.0.0" />
+    <PackageReference Include="Provisioning.Bus.Commands" Version="1.0.0.4" />
+    <PackageReference Include="SSH.NET" Version="2016.1.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.5.1" />
+    <PackageReference Include="System.ServiceModel.Duplex" Version="4.5.3" />
+    <PackageReference Include="System.ServiceModel.Http" Version="4.5.3" />
+    <PackageReference Include="System.ServiceModel.NetTcp" Version="4.5.3" />
+    <PackageReference Include="System.ServiceModel.Security" Version="4.5.3" />
+    <PackageReference Include="Teleena.AzureStorage.Client" Version="1.0.0" />
+    <PackageReference Include="Teleena.Sftp.Client" Version="1.0.5" />
+    <PackageReference Include="TeleenaFileLogging.AzureFunctions" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OTAServices.Business.Entities.Common\OTAServices.Business.Entities.Common.csproj" />
+    <ProjectReference Include="..\OTAServices.Business.Interfaces\OTAServices.Business.Interfaces.csproj" />
+    <ProjectReference Include="..\OTAServices.ServiceReferences\OTAServices.ServiceReferences.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
+  </ItemGroup>
+
+</Project>

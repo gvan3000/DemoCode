@@ -1,0 +1,30 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=devsimotaprovisionac93;AccountKey=xxxxx;EndpointSuffix=core.windows.net",
+    "AzureWebJobsDashboard": "DefaultEndpointsProtocol=https;AccountName=devsimotaprovisionac93;AccountKey=xxxxx;EndpointSuffix=core.windows.net",
+    "SftpAddress": "xfer.mijnteleena.nl",
+    "SftpServerPort": "2222",
+    "SftpUserName": "TeleenaOTAacc",
+    "SftpInboundOTACampaignPath": "OTACampaign\\ToTeleena\\",
+    "SftpProcessedOTACampaignPath": "OTACampaign\\Processed\\",
+    "SftpErrorOTACampaignPath": "OTACampaign\\Error\\",
+    "SftpInboundOTACampaignSubscribersPath": "OTACampaignSubscribers\\Inbound\\",
+    "SftpProcessedOTACampaignSubscribersPath": "OTACampaignSubscribers\\Processed\\",
+    "SftpErrorOTACampaignSubscribersPath": "OTACampaignSubscribers\\Error\\",
+    "SimProfileServiceUri": "net.tcp://adtdev03.teleena.local/ProvisioningWcf/SimProfileService.svc/tcp",
+    "AzureKeyVaultClientId": "yyyyy",
+    "AzureKeyVaultClientSecret": "xxxxx",
+    "AzureKeyVaultSecretUri": "https://sshprivatekeyvault.vault.azure.net/secrets/privateKeySFTP/xxxxx",
+    "ServiceBusConnection": "Endpoint=sb://movenl-dev07-euw-shr-sbu.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxx",
+    "ProvisioningBusAzureListenerQueueName": "Provisioning.Bus.Azure.Listener",
+    "OTAServiceBusAzureListenerTopicName": "otaservices.bus.contracts.events.bsb",
+    "DeleteImsiCallbackResutsQueueName": "deleteimsicallbackresuts",
+    "LogEnvironment": "Development"
+  },
+  "ConnectionStrings": {
+    "OTADbConnectionString": "server=local;database=OTADB;user id=ota_user;password=xxxxx;min pool size=20;max pool size=20",
+    "ProvisioningDbConnectionString": "local;database=ProvisioningDB;user id=Provisioning_User;password=xxxxx;min pool size=20;max pool size=20",
+    "MaximityDbConnectionString": "server=local;database=MaximityDB;user id=AzureFunction_User;password=xxxxx;min pool size=20;max pool size=20"
+  }
+}

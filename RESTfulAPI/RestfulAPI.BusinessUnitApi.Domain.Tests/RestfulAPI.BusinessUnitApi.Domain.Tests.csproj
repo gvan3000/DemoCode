@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{239A7AAD-DE23-4112-890D-E19049557835}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RestfulAPI.BusinessUnitApi.Domain.Tests</RootNamespace>
+    <AssemblyName>RestfulAPI.BusinessUnitApi.Domain.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Acceptance|AnyCPU'">
+    <OutputPath>bin\Acceptance\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Stubs|AnyCPU'">
+    <OutputPath>bin\Stubs\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TATA_Acceptance|AnyCPU'">
+    <OutputPath>bin\TATA_Acceptance\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test_ADTTST01|AnyCPU'">
+    <OutputPath>bin\Test_ADTTST01\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SH_ACC|AnyCPU'">
+    <OutputPath>bin\SH_ACC\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SH_PROD|AnyCPU'">
+    <OutputPath>bin\SH_PROD\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'JS_DEV|AnyCPU'">
+    <OutputPath>bin\JS_DEV\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'JS_TEST|AnyCPU'">
+    <OutputPath>bin\JS_TEST\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'NPP|AnyCPU'">
+    <OutputPath>bin\NPP\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ADTDEV03|AnyCPU'">
+    <OutputPath>bin\ADTDEV03\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ADTTST03|AnyCPU'">
+    <OutputPath>bin\ADTTST03\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UYT_PRD|AnyCPU'">
+    <OutputPath>bin\UYT_PRD\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ADTDEV52|AnyCPU'">
+    <OutputPath>bin\ADTDEV52\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=4.1.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.1.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Moq, Version=4.7.127.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.7.127\lib\net45\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.2\lib\netstandard2.0\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.2\lib\netstandard2.0\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="TeleenaLogging.Abstraction, Version=1.0.0.27595, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TeleenaLogging.Abstraction.1.0.0.27595\lib\net452\TeleenaLogging.Abstraction.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="ApiModelProviders\AddOnProviderUT.cs" />
+    <Compile Include="ApiModelProviders\APNProviderUT.cs" />
+    <Compile Include="ApiModelProviders\BalanceProfileProviderUT.cs" />
+    <Compile Include="ApiModelProviders\BalanceProviderUT.cs" />
+    <Compile Include="ApiModelProviders\BusinessUnitProviderUT.cs" />
+    <Compile Include="ApiModelProviders\DepartmentProviderUT.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\BusinessUnitCompanyIdFilterUT.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\BusinessUnitCustomerIdFilterUT.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\BusinessUnitHasSharedWalletFilterUT.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\BusinessUnitIdFilterUT.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\NoChildrenBusinessUnitIdFilterUT.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\NoChildrenNameFilterUT.cs" />
+    <Compile Include="ApiModelProviders\Internal\BusinessUnitProducerFactoryUT.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetAvailableMsisdns\AvailableMsisdnFactory.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetBusinessUnit\CompanyIdBusinessUnitIsSharedBalanceLoadingStrategyUT.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetBusinessUnit\CompanyIdBusinessUnitLoadingStrategyUT.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetBusinessUnit\SingleBusinessUnitLoadingStrategyUT.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetBusinessUnit\ParentBusinessUnitLoadingStrategyUT.cs" />
+    <Compile Include="ApiModelProviders\MobileProviderUT.cs" />
+    <Compile Include="ApiModelProviders\NotificationConfigurationProviderUT.cs" />
+    <Compile Include="ApiModelProviders\PreferredLanguageProviderUT.cs" />
+    <Compile Include="ApiModelProviders\ProductProviderUT.cs" />
+    <Compile Include="ApiModelProviders\ProductTypesProviderUT.cs" />
+    <Compile Include="ApiModelProviders\PropositionsProviderUT.cs" />
+    <Compile Include="ApiModelProviders\QuotaDistributionProviderUT.cs" />
+    <Compile Include="ApiModelProviders\SimProviderUnitTests.cs" />
+    <Compile Include="Internal\GetBusinessUnit\AccountIdEqualityComparerUT.cs" />
+    <Compile Include="Internal\GetBusinessUnit\BusinessUnitModelEqualityComparerUT.cs" />
+    <Compile Include="Models\BusinessUnitModels\BusinessUnitSearchModelUT.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceTypeConfiguration\ServiceTypeConfigurationProviderUT.cs" />
+    <Compile Include="Translators\AccountContractTranslatorUT.cs" />
+    <Compile Include="Translators\AllowedPropositionContractTranslatorUT.cs" />
+    <Compile Include="Translators\ApnsResponseModelTranslatorUT.cs" />
+    <Compile Include="Translators\AvailableLanguagesResponseModelTranslatorUT.cs" />
+    <Compile Include="Translators\BalanceProfileListTranslatorUT.cs" />
+    <Compile Include="Translators\BalanceProfileTranslatorUT.cs" />
+    <Compile Include="Translators\BalancesContractBalanceQuotaListModelTranslatorUT.cs" />
+    <Compile Include="Translators\BalanceTranslatorUT.cs" />
+    <Compile Include="Translators\BusinessUnitPatchModelPropositionsTranslatorUT.cs" />
+    <Compile Include="Translators\BuUnitPurchasedAddOnsCumulativeTranslatorUT.cs" />
+    <Compile Include="Translators\CreateNotificationTranslatorUT.cs" />
+    <Compile Include="Translators\PreferredLanguageResponseModelTranslatorUT.cs" />
+    <Compile Include="Translators\ProductImeiTranslatorUT.cs" />
+    <Compile Include="Translators\SetQuotaTranslatorUT.cs" />
+    <Compile Include="Translators\NotificationTypeTranslatorUT.cs" />
+    <Compile Include="Translators\UpdateNotificationValidatorUT.cs" />
+    <Compile Include="Translators\CreateNotificationValidatorUT.cs" />
+    <Compile Include="Translators\DeleteApnTranslatorUT.cs" />
+    <Compile Include="Translators\NotificationListDataModelTranslatorUT.cs" />
+    <Compile Include="Translators\PageSizeInfoTranslatorUT.cs" />
+    <Compile Include="Translators\ProductAllowedBalancesContractUT.cs" />
+    <Compile Include="Translators\ProductModelTranslatorUT.cs" />
+    <Compile Include="Translators\ProductQuotaDistributionContractTranslatorUT.cs" />
+    <Compile Include="Translators\ProductTypeContractTranslatorUT.cs" />
+    <Compile Include="Translators\PropositionInfoModelTranslatorUT.cs" />
+    <Compile Include="Translators\PropositionsContractTranslatorUT.cs" />
+    <Compile Include="Translators\PurchaseAddOnResultTranslatorUT.cs" />
+    <Compile Include="Translators\SaveQuotaDistributionContactTranslatorUT.cs" />
+    <Compile Include="Translators\APNTranslatorUT.cs" />
+    <Compile Include="Translators\UpdateApnsTranslatorUT.cs" />
+    <Compile Include="Translators\UpdatePreferredLanguagesContractTranslatorUT.cs" />
+    <Compile Include="Validators\BusinessUnitPreferredLanguagesValidatorUT.cs" />
+    <Compile Include="Validators\CreateDepartmentContractTranslatorUT.cs" />
+    <Compile Include="Validators\DeleteApnValidatorUT.cs" />
+    <Compile Include="Translators\UpdateDefaultApnTranslatorUT.cs" />
+    <Compile Include="Validators\DepartmentModelTranslatorUT.cs" />
+    <Compile Include="Validators\GetDepartmentsModelTranslatorUT.cs" />
+    <Compile Include="Validators\UpdateBusinessUnitApnsValidatorUT.cs" />
+    <Compile Include="Validators\UpdateBusinessUnitDefaultApnValidatorUT.cs" />
+    <Compile Include="Validators\UpdateNotificationValidationUT.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RestfulAPI.BusinessUnitApi.Domain\RestfulAPI.BusinessUnitApi.Domain.csproj">
+      <Project>{e89e45ce-edf2-4d94-b7af-beb94de67a4b}</Project>
+      <Name>RestfulAPI.BusinessUnitApi.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestfulAPI.CommonConstants\RestfulAPI.Constants.csproj">
+      <Project>{aa2aba02-1480-4a08-bdc3-1f5ef907fd8d}</Project>
+      <Name>RestfulAPI.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestfulAPI.Common\RestfulAPI.Common.csproj">
+      <Project>{47382E8F-8075-46FB-A83F-558D9AB35526}</Project>
+      <Name>RestfulAPI.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestfulAPI.Configuration\RestfulAPI.Configuration.csproj">
+      <Project>{72beb131-d172-45f0-a364-80cf20eef750}</Project>
+      <Name>RestfulAPI.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestfulAPI.Logging\RestfulAPI.Logging.csproj">
+      <Project>{FD406070-B8AF-46DE-BABE-8AF919841CB7}</Project>
+      <Name>RestfulAPI.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestfulAPI.ServiceReferences\RestfulAPI.TeleenaServiceReferences.csproj">
+      <Project>{BD3878E8-2A81-4A93-B9AE-B7B57162CEE3}</Project>
+      <Name>RestfulAPI.TeleenaServiceReferences</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E89E45CE-EDF2-4D94-B7AF-BEB94DE67A4B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RestfulAPI.BusinessUnitApi.Domain</RootNamespace>
+    <AssemblyName>RestfulAPI.BusinessUnitApi.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\RestfulAPI.BusinessUnitApi.Domain.XML</DocumentationFile>
+    <NoWarn>1591;</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\RestfulAPI.BusinessUnitApi.Domain.XML</DocumentationFile>
+    <NoWarn>1591;</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test|AnyCPU'">
+    <OutputPath>bin\Test\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Test\RestfulAPI.BusinessUnitApi.Domain.XML</DocumentationFile>
+    <NoWarn>1591;</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Acceptance|AnyCPU'">
+    <OutputPath>bin\Acceptance\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Acceptance\RestfulAPI.BusinessUnitApi.Domain.XML</DocumentationFile>
+    <NoWarn>1591;</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Stubs|AnyCPU'">
+    <OutputPath>bin\Stubs\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>1591;</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TATA_Acceptance|AnyCPU'">
+    <OutputPath>bin\TATA_Acceptance\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\TATA_Acceptance\RestfulAPI.BusinessUnitApi.Domain.XML</DocumentationFile>
+    <NoWarn>1591;</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Test_ADTTST01|AnyCPU'">
+    <OutputPath>bin\Test_ADTTST01\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\Test_ADTTST01\RestfulAPI.BusinessUnitApi.Domain.XML</DocumentationFile>
+    <NoWarn>1591;</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SH_ACC|AnyCPU'">
+    <OutputPath>bin\SH_ACC\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Acceptance\RestfulAPI.BusinessUnitApi.Domain.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>1591;</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'SH_PROD|AnyCPU'">
+    <OutputPath>bin\SH_PROD\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\RestfulAPI.BusinessUnitApi.Domain.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>1591;</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'JS_DEV|AnyCPU'">
+    <OutputPath>bin\JS_DEV\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'JS_TEST|AnyCPU'">
+    <OutputPath>bin\JS_TEST\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'NPP|AnyCPU'">
+    <OutputPath>bin\NPP\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\RestfulAPI.BusinessUnitApi.Domain.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>1591;</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ADTDEV03|AnyCPU'">
+    <OutputPath>bin\ADTDEV03\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\RestfulAPI.BusinessUnitApi.Domain.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>1591;</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ADTTST03|AnyCPU'">
+    <OutputPath>bin\ADTTST03\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\RestfulAPI.BusinessUnitApi.Domain.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>1591;</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'UYT_PRD|AnyCPU'">
+    <OutputPath>bin\UYT_PRD\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\Release\RestfulAPI.BusinessUnitApi.Domain.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>1591;</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ADTDEV52|AnyCPU'">
+    <OutputPath>bin\ADTDEV52\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.RegistrationByConvention, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.4.0.1\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TeleenaLogging.Abstraction, Version=1.0.0.27595, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\TeleenaLogging.Abstraction.1.0.0.27595\lib\net452\TeleenaLogging.Abstraction.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApiModelProviders\AddOnProvider.cs" />
+    <Compile Include="ApiModelProviders\APNProvider.cs" />
+    <Compile Include="ApiModelProviders\BalanceProfileProvider.cs" />
+    <Compile Include="ApiModelProviders\BalanceProvider.cs" />
+    <Compile Include="ApiModelProviders\BusinessUnitProvider.cs" />
+    <Compile Include="ApiModelProviders\CompanyFeatureProvider.cs" />
+    <Compile Include="ApiModelProviders\Contracts\GetProductImeiRequest.cs" />
+    <Compile Include="ApiModelProviders\DepartmentProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IAddOnProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IAPNProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IBalanceProfileProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IBalanceProvider.cs" />
+    <Compile Include="ApiModelProviders\Contracts\GetBusinessUnitRequest.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IBusinessUnitProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IDepartmentProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IFeatureProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IMobileProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\INotificationConfigurationProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IPreferredLanguageProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IProductProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IProductTypeProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IPropositionsProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\ISimProvider.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\ISmscSettingProvider.cs" />
+    <Compile Include="ApiModelProviders\Internal\Balance\PropositionInfoModel.cs" />
+    <Compile Include="ApiModelProviders\Internal\BusinessUnitProducerFactory.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\BusinessUnitCompanyIdFilter.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\BusinessUnitCustomerIdFilter.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\BusinessUnitFilterBase.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\BusinessUnitHasEndUserSubscriptionFilter.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\BusinessUnitHasSharedWalletFilter.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\BusinessUnitIdFilter.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\IBusinessUnitFilter.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\NoChildrenBusinessUnitIdFilter.cs" />
+    <Compile Include="ApiModelProviders\Internal\FilterBusinessUnit\NoChildrenNameFilter.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetAvailableMsisdn\AvailableMsisdnFactory.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetAvailableMsisdn\NoStatusParamStrategy.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetAvailableMsisdn\WithStatusParamStrategy.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetAvailableMsisdn\IAvailableMsidsnFactory.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetAvailableSIMs\AvailableSimProviderRequest.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetBusinessUnit\AccountEqualityComparer.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetBusinessUnit\BusinessUnitModelEqualityComparer.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetBusinessUnit\CompanyIdBusinessUnitIsSharedBalanceLoadingStrategy.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetBusinessUnit\CompanyIdBusinessUnitLoadingStrategy.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetAvailableMsisdn\IAvailableMsisdnStrategy.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetBusinessUnit\BaseBusinessUnitLoadingStrategy.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetBusinessUnit\IBusinessUnitLoadingStrategy.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetBusinessUnit\SingleBusinessUnitLoadingStrategy.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetBusinessUnit\ParentBusinessUnitLoadingStrategy.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetAvailableMsisdn\AvailableMsisdnProviderRequest.cs" />
+    <Compile Include="ApiModelProviders\Internal\GetPurchasedAddOns\GetPurchasedAddonsBusinessUnitRequest.cs" />
+    <Compile Include="ApiModelProviders\Internal\IBusinessUnitProducerFactory.cs" />
+    <Compile Include="ApiModelProviders\Internal\LoadAddressData.cs" />
+    <Compile Include="ApiModelProviders\Interfaces\IQuotaDistributionProvider.cs" />
+    <Compile Include="ApiModelProviders\MobileProvider.cs" />
+    <Compile Include="ApiModelProviders\NotificationConfigurationProvider.cs" />
+    <Compile Include="ApiModelProviders\PreferredLanguageProvider.cs" />
+    <Compile Include="ApiModelProviders\ProductProvider.cs" />
+    <Compile Include="ApiModelProviders\ProductTypeProvider.cs" />
+    <Compile Include="ApiModelProviders\PropositionsProvider.cs" />
+    <Compile Include="ApiModelProviders\QuotaDistributionProvider.cs" />
+    <Compile Include="ApiModelProviders\SimProvider.cs" />
+    <Compile Include="ApiModelProviders\SmscSettingsProvider.cs" />
+    <Compile Include="Configuration\UnityConfig.cs" />
+    <Compile Include="LoggerProvider.cs" />
+    <Compile Include="Models\AddOnCumulativeModels\AddOnCumulativeListModel.cs" />
+    <Compile Include="Models\AddOnCumulativeModels\AddOnCumulativeModel.cs" />
+    <Compile Include="Models\AddOnCumulativeModels\AddOnDefinitionModel.cs" />
+    <Compile Include="Models\AddOnModels\AddAddOnResponseModel.cs" />
+    <Compile Include="Models\AddOnModels\AddOn.cs" />
+    <Compile Include="Models\AddOnModels\AddOnListModel.cs" />
+    <Compile Include="Models\AddOnModels\AddOnModel.cs" />
+    <Compile Include="Models\AddOnModels\DeleteAddOnModel.cs" />
+    <Compile Include="Models\AddOnModels\PurchaseAddOnModel.cs" />
+    <Compile Include="Models\APNs\APNRequestDetail.cs" />
+    <Compile Include="Models\APNs\APNResponseDetail.cs" />
+    <Compile Include="Models\APNs\APNSet.cs" />
+    <Compile Include="Models\APNs\APNSetList.cs" />
+    <Compile Include="Models\APNs\APNsResponseModel.cs" />
+    <Compile Include="Models\APNs\UpdateBusinessUnitApnsModel.cs" />
+    <Compile Include="Models\APNs\UpdateBusinessUnitDefaultApnModel.cs" />
+    <Compile Include="Models\AvailableMSISDNModels\AvailableMSISDNResponseModel.cs" />
+    <Compile Include="Models\AvailableMSISDNModels\AvailableMSISDNSearchModel.cs" />
+    <Compile Include="Models\AvailableMSISDNModels\MsisdnModel.cs" />
+    <Compile Include="Models\AvailableMSISDNModels\PagingModel.cs" />
+    <Compile Include="Models\AvailableSIMModels\AvailableSIMResponseModel.cs" />
+    <Compile Include="Models\AvailableSIMModels\AvailableSimResponseV2Model.cs" />
+    <Compile Include="Models\BalanceModels\BalanceAllowanceModel.cs" />
+    <Compile Include="Models\BalanceModels\BalanceOrigin.cs" />
+    <Compile Include="Models\BalanceModels\BalanceQuotasListModel.cs" />
+    <Compile Include="Models\BalanceModels\BalanceQuotaModel.cs" />
+    <Compile Include="Models\BalanceModels\ProductAllowedBalanceList.cs" />
+    <Compile Include="Models\BalanceModels\ProductAllowedBalanceModel.cs" />
+    <Compile Include="Models\BalanceModels\SetBalanceModel.cs" />
+    <Compile Include="Models\BalanceProfileModels\BalanceProfileListModel.cs" />
+    <Compile Include="Models\BalanceProfileModels\BalanceProfileModel.cs" />
+    <Compile Include="Models\BusinessUnitModels\BusinessUnitCreateModel.cs" />
+    <Compile Include="Models\BusinessUnitModels\BusinessUnitListModel.cs" />
+    <Compile Include="Models\BusinessUnitModels\BusinessUnitModel.cs" />
+    <Compile Include="Models\BusinessUnitModels\BusinessUnitPatchModel.cs" />
+    <Compile Include="Models\BusinessUnitModels\BusinessUnitSearchModel.cs" />
+    <Compile Include="Models\BusinessUnitModels\CreateBusinessUnitResponseModel.cs" />
+    <Compile Include="Models\BusinessUnitModels\Proposition.cs" />
+    <Compile Include="Models\BusinessUnitModels\BusinessUnitExtraInfoModel.cs" />
+    <Compile Include="Models\DepartmentModels\CreateDepartmentModel.cs" />
+    <Compile Include="Models\DepartmentModels\CreateDepartmentResponseModel.cs" />
+    <Compile Include="Models\DepartmentModels\GetDepartmentModel.cs" />
+    <Compile Include="Models\DepartmentModels\GetDepartmentsModel.cs" />
+    <Compile Include="Models\DepartmentModels\UpdateDepartmentModel.cs" />
+    <Compile Include="Models\Enums\AddOnEnums.cs" />
+    <Compile Include="Models\Enums\BusinessUnitsEnums.cs" />
+    <Compile Include="Models\Enums\NotificationsEnums.cs" />
+    <Compile Include="Models\NotificationModels\CreateNotificationModel.cs" />
+    <Compile Include="Models\NotificationModels\CreateNotificationModelResponse.cs" />
+    <Compile Include="Models\NotificationModels\Delivery.cs" />
+    <Compile Include="Models\NotificationModels\DeliveryOption.cs" />
+    <Compile Include="Models\NotificationModels\GetNotificationDataModel.cs" />
+    <Compile Include="Models\NotificationModels\GetNotificationListDataModel.cs" />
+    <Compile Include="Models\NotificationModels\UpdateNotificationModel.cs" />
+    <Compile Include="Models\PreferredLanguageModels\AvailableLanguageModel.cs" />
+    <Compile Include="Models\PreferredLanguageModels\AvailableLanguagesResponseModel.cs" />
+    <Compile Include="Models\PreferredLanguageModels\PreferredLanguageModel.cs" />
+    <Compile Include="Models\PreferredLanguageModels\PreferredLanguageResponseModel.cs" />
+    <Compile Include="Models\PreferredLanguageModels\UpdatePreferredLanguageModel.cs" />
+    <Compile Include="Models\PreferredLanguageModels\UpdatePreferredLanguagesRequestModel.cs" />
+    <Compile Include="Models\ProductModels\PageSizeInfo.cs" />
+    <Compile Include="Models\ProductModels\PagingInfo.cs" />
+    <Compile Include="Models\ProductModels\ProductImeiListModel.cs" />
+    <Compile Include="Models\ProductModels\ProductImeiModel.cs" />
+    <Compile Include="Models\ProductModels\ProductModel.cs" />
+    <Compile Include="Models\ProductModels\ProductsListModel.cs" />
+    <Compile Include="Models\ProductStatusModels\ProductStatusModel.cs" />
+    <Compile Include="Models\ProductTypeModels\ProductTypeModel.cs" />
+    <Compile Include="Models\ProductTypeModels\ProductTypeListResponseModel.cs" />
+    <Compile Include="Models\PropositionsModels\CommercialOfferConfig.cs" />
+    <Compile Include="Models\PropositionsModels\Metering.cs" />
+    <Compile Include="Models\PropositionsModels\PropositionModel.cs" />
+    <Compile Include="Models\PropositionsModels\PropositionsResponseModel.cs" />
+    <Compile Include="Models\PropositionsModels\ExtendedThresholdLimits.cs" />
+    <Compile Include="Models\PropositionsModels\ThresholdLimits.cs" />
+    <Compile Include="Models\PropositionsModels\Tresholds.cs" />
+    <Compile Include="Models\BalanceModels\BalanceModel.cs" />
+    <Compile Include="Models\BalanceModels\BalancesResponseModel.cs" />
+    <Compile Include="Models\QuotaModels\SetBusinessUnitQuotaModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Translators\AddOn\BusinessUnitPurchasedAddOnListContractTranslator.cs" />
+    <Compile Include="Translators\AddOn\BusinessUnitPurchasedAddOnsCumulativeTranslator.cs" />
+    <Compile Include="Translators\AddOn\DeleteAddOnModelTranslator.cs" />
+    <Compile Include="Translators\AddOn\IAddOnContractTranslator.cs" />
+    <Compile Include="Translators\AddOn\IDeleteAddOnModelTranslator.cs" />
+    <Compile Include="Translators\APNTranslators\ApnsResponseModelTranslator.cs" />
+    <Compile Include="Translators\APNTranslators\BusinessUnitAPNsTranslator.cs" />
+    <Compile Include="Translators\APNTranslators\DeleteApnTranslator.cs" />
+    <Compile Include="Translators\APNTranslators\IDeleteApnTranslator.cs" />
+    <Compile Include="Translators\APNTranslators\IUpdateApnsTranslator.cs" />
+    <Compile Include="Translators\APNTranslators\IUpdateDefaultApnTranslator.cs" />
+    <Compile Include="Translators\APNTranslators\UpdateApnsTranslator.cs" />
+    <Compile Include="Translators\APNTranslators\UpdateDefaultApnTranslator.cs" />
+    <Compile Include="Translators\BalanceProfile\BalanceProfileListTranslator.cs" />
+    <Compile Include="Translators\BalanceProfile\BalanceProfileTranslator.cs" />
+    <Compile Include="Translators\Balance\BalancesContractBalanceQuotaListModelTranslator.cs" />
+    <Compile Include="Translators\Balance\ISaveQuotaDistributionContractTranslator.cs" />
+    <Compile Include="Translators\Balance\ProductAllowedBalancesContractTranslator.cs" />
+    <Compile Include="Translators\Balance\ProductQuotaDistributionContractTranslator.cs" />
+    <Compile Include="Translators\Balance\PropositionInfoModelTranslator.cs" />
+    <Compile Include="Translators\Balance\SaveQuotaDistributionContractTranslator.cs" />
+    <Compile Include="Translators\BusinessUnit\AccountContractTranslator.cs" />
+    <Compile Include="Translators\AddOn\AddOnContractTranslator.cs" />
+    <Compile Include="Translators\AddOn\AllowedAddOnsContractTranslator.cs" />
+    <Compile Include="Translators\Balance\BalanceTranslator.cs" />
+    <Compile Include="Translators\BusinessUnitApiTranslators.cs" />
+    <Compile Include="Translators\BusinessUnit\BusinessUnitPatchModelPropositionsTranslator.cs" />
+    <Compile Include="Translators\BusinessUnit\CreateBusinessUnitPropositionTranslator.cs" />
+    <Compile Include="Translators\BusinessUnit\CreateBusinessUnitTranslator.cs" />
+    <Compile Include="Translators\BusinessUnit\GetDepartmentsModelTranslator.cs" />
+    <Compile Include="Translators\BusinessUnit\IAccountContractTranslator.cs" />
+    <Compile Include="Translators\AddOn\IAllowedAddOnsContractTranslator.cs" />
+    <Compile Include="Translators\Balance\IBalanceTranslator.cs" />
+    <Compile Include="Translators\Department\CreateDepartmentContractTranslator.cs" />
+    <Compile Include="Translators\Department\DepartmentModelTranslator.cs" />
+    <Compile Include="Translators\Department\ICreateDepartmentContractTranslator.cs" />
+    <Compile Include="Translators\BusinessUnit\IGetDepartmentsModelTranslator.cs" />
+    <Compile Include="Translators\Department\UpdateDepartmentContractTranslator.cs" />
+    <Compile Include="Translators\IBusinessUnitApiTranslators.cs" />
+    <Compile Include="Translators\Notifications\CreateNotificationResultTranslator.cs" />
+    <Compile Include="Translators\Notifications\CreateNotificationTranslator.cs" />
+    <Compile Include="Translators\Notifications\NotificationListDataModelTranslator.cs" />
+    <Compile Include="Translators\PreferredLanguage\AvailableLanguagesResponseModelTranslator.cs" />
+    <Compile Include="Translators\PreferredLanguage\PreferredLanguageResponseModelTranslator.cs" />
+    <Compile Include="Translators\PreferredLanguage\UpdatePreferredLanguagesContractTranslator.cs" />
+    <Compile Include="Translators\ProductImei\ProductImeiModelListTranslator.cs" />
+    <Compile Include="Translators\Quota\ISetQuotaTranslator.cs" />
+    <Compile Include="Translators\Quota\SetQuotaTranslator.cs" />
+    <Compile Include="Translators\SimStatusGuidToStringTranslator.cs" />
+    <Compile Include="Validators\Notifications\CreateNotificationValidator.cs" />
+    <Compile Include="Validators\Notifications\NotificationValidation.cs" />
+    <Compile Include="Translators\Notifications\UpdateBusinessUnitNotificationConfigurationTranslator.cs" />
+    <Compile Include="Translators\ProductType\ProductTypeContractTranslator.cs" />
+    <Compile Include="Translators\Product\PageSizeInfoTranslator.cs" />
+    <Compile Include="Translators\Proposition\AllowedPropositionContractTranslator.cs" />
+    <Compile Include="Translators\Proposition\IAllowedPropositionContractTranslator.cs" />
+    <Compile Include="Translators\Proposition\IPropositionContractTranslator.cs" />
+    <Compile Include="Translators\MsisdnContractTranslator.cs" />
+    <Compile Include="Translators\Product\ProductModelListTranslator.cs" />
+    <Compile Include="Translators\Product\ProductModelTranslator.cs" />
+    <Compile Include="Translators\Proposition\PropositionsContractTranslator.cs" />
+    <Compile Include="Translators\AddOn\PurchaseAddOnResultTranslator.cs" />
+    <Compile Include="Translators\SimStatusTranslator.cs" />
+    <Compile Include="Validators\APNs\DeleteApnValidator.cs" />
+    <Compile Include="Validators\APNs\IDeleteApnValidator.cs" />
+    <Compile Include="Validators\APNs\IUpdateBusinessUnitApnsValidator.cs" />
+    <Compile Include="Validators\APNs\IUpdateBusinessUnitDefaultApnValidator.cs" />
+    <Compile Include="Validators\APNs\UpdateBusinessUnitApnsValidator.cs" />
+    <Compile Include="Validators\APNs\UpdateBusinessUnitDefaultApnValidator.cs" />
+    <Compile Include="Validators\BusinessUnitValidators.cs" />
+    <Compile Include="Validators\IBusinessUnitValidators.cs" />
+    <Compile Include="Validators\Notifications\UpdateNotificationValidation.cs" />
+    <Compile Include="Validators\PreferredLanguages\BusinessUnitPreferredLanguagesValidator.cs" />
+    <Compile Include="Validators\PreferredLanguages\IBusinessUnitPreferredLanguagesValidator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\RestfulAPI.CommonConstants\RestfulAPI.Constants.csproj">
+      <Project>{AA2ABA02-1480-4A08-BDC3-1F5EF907FD8D}</Project>
+      <Name>RestfulAPI.Constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestfulAPI.Common\RestfulAPI.Common.csproj">
+      <Project>{47382E8F-8075-46FB-A83F-558D9AB35526}</Project>
+      <Name>RestfulAPI.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestfulAPI.Configuration\RestfulAPI.Configuration.csproj">
+      <Project>{72BEB131-D172-45F0-A364-80CF20EEF750}</Project>
+      <Name>RestfulAPI.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestfulAPI.Logging\RestfulAPI.Logging.csproj">
+      <Project>{FD406070-B8AF-46DE-BABE-8AF919841CB7}</Project>
+      <Name>RestfulAPI.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestfulAPI.ServiceReferences\RestfulAPI.TeleenaServiceReferences.csproj">
+      <Project>{BD3878E8-2A81-4A93-B9AE-B7B57162CEE3}</Project>
+      <Name>RestfulAPI.TeleenaServiceReferences</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

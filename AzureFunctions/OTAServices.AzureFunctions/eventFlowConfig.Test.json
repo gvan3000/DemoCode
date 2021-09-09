@@ -1,0 +1,16 @@
+{
+  "inputs": [
+    {
+      "type": "Log4net",
+      "logLevel": "Debug"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "EventHub",
+      "eventHubName": "tf-logging-hub",
+      "connectionString": "Endpoint=sb://mvne-acc-euw-sup-logginghub.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=xxxxx"
+    }
+  ],
+  "schemaVersion": "2018-06-07"
+}
